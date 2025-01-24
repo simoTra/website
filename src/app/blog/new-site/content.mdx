@@ -1,0 +1,33 @@
+import { BlogLayout } from "@/components/BlogLayout";
+
+export const meta = {
+  date: "2025-01-24",
+  title: "A Fresh Start for the Blog",
+  description: "Why I changed my website design",
+  image: "/blog/newSite/newSite.png",
+  tags: [
+    "Website",
+    "Design",
+    "Next.js",
+  ],
+};
+
+export default (props) => (
+  <BlogLayout meta={meta} {...props}>
+    <p>
+      If you've been following my blog for a while, you might have noticed some big changes. Yes, I've moved to a completely new website design! The previous site had a unique style, but it just didn’t feel like it truly represented me. It was time for a fresh start.
+    </p>
+
+    <p>
+      This new design focuses on being minimal and flat, providing a cleaner and simpler foundation. It’s a blank canvas that gives me the freedom to experiment and grow without unnecessary distractions. By going back to basics, I can now focus on the content and the ideas I want to share.
+    </p>
+
+    <p>
+      From a technical perspective, this site still uses the same technology stack, but it has less overhead. That means faster load times and a smoother experience for everyone. However, one caveat is that this template is based on Next.js version 13. I plan to update it to the latest version as soon as possible to ensure it stays modern and efficient.
+    </p>
+
+    <p>
+      For now, I’m excited about this fresh start and all the possibilities it opens up. Thank you for being part of this journey with me. Let’s see where it takes us!
+    </p>
+  </BlogLayout>
+);
