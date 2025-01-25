@@ -46,7 +46,7 @@ export default function Home() {
             transition={{ duration: 0.2, delay: index * 0.1 }}
           >
             <Image
-              unoptimized={true}
+              
               src={image}
               width={300}
               height={500}
@@ -110,7 +110,7 @@ export default function Home() {
               transition={{ duration: 0.2, delay: index * 0.1 }}
             >
               <Image
-                unoptimized={true}
+                
                 src={image}
                 width={300}
                 height={500}

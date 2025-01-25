@@ -31,7 +31,7 @@ export const Projects = () => {
               className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-orange-500 rounded-2xl transition duration-200 pt-4"
             >
                       <Image
-          unoptimized={true}
+          
                 src={project.thumbnail}
                 alt="thumbnail"
                 height="200"

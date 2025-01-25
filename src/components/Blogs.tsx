@@ -56,7 +56,7 @@ export const Blogs = ({ blogs }: { blogs: Blog[] }) => {
             </AnimatePresence>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 relative z-20">
               <Image
-                unoptimized={true}
+                
                 src={blog.image}
                 alt="thumbnail"
                 height="200"

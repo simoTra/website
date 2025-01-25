@@ -107,7 +107,7 @@ const SidebarHeader = () => {
   return (
     <div className="flex space-x-2">
               <Image
-          unoptimized={true}
+          
         src="/about/2about.jpg"
         alt="Avatar"
         height="40"

@@ -49,7 +49,7 @@ export function BlogLayout({
           </time>
           <div className="w-full mt-4 aspect-w-16 aspect-h-10 rounded-lg overflow-hidden xl:aspect-w-16 xl:aspect-h-10 relative">
                     <Image
-          unoptimized={true}
+          
               src={meta.image}
               alt="thumbnail"
               height="800"

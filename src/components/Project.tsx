@@ -28,7 +28,7 @@ export const SingleProject = ({ project }: { project: Project }) => {
         className="relative"
       >
         <Image
-          unoptimized={true}
+          
           src={activeImage}
           alt="thumbnail"
           height="1000"
@@ -44,7 +44,7 @@ export const SingleProject = ({ project }: { project: Project }) => {
             key={`image-thumbnail-${idx}`}
           >
             <Image
-              unoptimized={true}
+              
               src={image}
               alt="project thumbnail"
               height="1000"

@@ -44,7 +44,7 @@ export const WorkHistory = () => {
             {item.image && (
               <div className="mt-4 md:mt-0 md:ml-6 w-full md:w-40 lg:w-60">
                 <Image
-                  unoptimized={true}
+                  
                   src={`/${item.image}`}
                   alt={`${item.title} image`}
                   className="rounded-lg shadow-md w-full"
