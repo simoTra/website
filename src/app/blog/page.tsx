@@ -19,7 +19,7 @@ export default async function Blog() {
 
   return (
     <Container>
-      <Heading className="font-black pb-4">
+      <Heading className="underline decoration-orange-500 text-neutral-300">
         Just a place to share tought about tech
       </Heading>
       <Blogs blogs={data} />

@@ -61,7 +61,7 @@ export const Navigation = ({
           href={link.href}
           onClick={() => isMobile() && setOpen(false)}
           className={twMerge(
-            "text-neutral-400 hover:text-orange-500 transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm",
+            "text-neutral-300 hover:text-orange-500 transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm",
             isActive(link.href) && "bg-neutral-800 text-orange-500"
           )}
         >
@@ -87,7 +87,7 @@ export const Navigation = ({
           href={link.href}
           target="_blank"
           className={twMerge(
-            "text-neutral-400 hover:text-orange-500 transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
+            "text-neutral-300 hover:text-orange-500 transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
           )}
         >
           <link.icon
@@ -106,7 +106,8 @@ export const Navigation = ({
 const SidebarHeader = () => {
   return (
     <div className="flex space-x-2">
-      <Image
+              <Image
+          unoptimized={true}
         src="/about/2about.jpg"
         alt="Avatar"
         height="40"
@@ -115,7 +116,7 @@ const SidebarHeader = () => {
       />
       <div className="flex text-sm flex-col">
         <p className="font-bold text-orange-500">Simone Traversi</p>
-        <p className="font-light text-neutral-400">Technology Enthusiast</p>
+        <p className="font-light text-neutral-300">Technology Enthusiast</p>
       </div>
     </div>
   );

@@ -38,17 +38,18 @@ export function BlogLayout({
             <ArrowLeftIcon className="h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700 d" />
           </Link>
 
-          <Heading className="text-neutral-400 py-4">{meta.title}</Heading>
+          <Heading className="text-neutral-300 py-4">{meta.title}</Heading>
           <time
             dateTime={meta.date}
-            className="text-neutral-400 flex items-center text-base"
+            className="text-neutral-300 flex items-center text-base"
           >
-            <Paragraph className=" text-neutral-400">
+            <Paragraph className=" text-neutral-300">
               {formatDate(meta.date)}
             </Paragraph>
           </time>
           <div className="w-full mt-4 aspect-w-16 aspect-h-10 rounded-lg overflow-hidden xl:aspect-w-16 xl:aspect-h-10 relative">
-            <Image
+                    <Image
+          unoptimized={true}
               src={meta.image}
               alt="thumbnail"
               height="800"
@@ -57,7 +58,7 @@ export function BlogLayout({
             />
           </div>
         </header>
-        <Prose className="text-neutral-400 mt-8">{children}</Prose>
+        <Prose className="text-neutral-300 mt-8">{children}</Prose>
       </article>
     </Container>
   );

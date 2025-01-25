@@ -28,6 +28,7 @@ export const SingleProject = ({ project }: { project: Project }) => {
         className="relative"
       >
         <Image
+          unoptimized={true}
           src={activeImage}
           alt="thumbnail"
           height="1000"
@@ -43,6 +44,7 @@ export const SingleProject = ({ project }: { project: Project }) => {
             key={`image-thumbnail-${idx}`}
           >
             <Image
+              unoptimized={true}
               src={image}
               alt="project thumbnail"
               height="1000"
@@ -52,7 +54,7 @@ export const SingleProject = ({ project }: { project: Project }) => {
           </button>
         ))}
       </div>
-      <Heading className="text-neutral-400 mb-2 pb-1"> {project.title}</Heading>
+      <Heading className="text-neutral-300 mb-2 pb-1"> {project.title}</Heading>
       <div className="mx-auto flex space-x-2 md:mb-1 mt-2 md:mt-0">
         {project.stack?.map((stack: string) => (
           <span
@@ -64,9 +66,11 @@ export const SingleProject = ({ project }: { project: Project }) => {
         ))}
       </div>
       <div>
-        <Paragraph className="mx-auto max-w-xl mt-4">{project.description}</Paragraph>
+        <Paragraph className="mx-auto max-w-xl mt-4">
+          {project.description}
+        </Paragraph>
       </div>
-      <div className="prose prose-sm md:prose-base max-w-none text-neutral-400">
+      <div className="prose prose-sm md:prose-base max-w-none text-neutral-300">
         {project?.content}
       </div>
       <a
@@ -74,7 +78,7 @@ export const SingleProject = ({ project }: { project: Project }) => {
         target="__blank"
         className="inline-flex items-center gap-1 group/button rounded-full hover:scale-105 focus:outline-none transition ring-offset-gray-900 bg-gray-800 text-white shadow-lg shadow-black/20 sm:backdrop-blur-sm group-hover/button:bg-gray-50/15 group-hover/button:scale-105 focus-visible:ring-1 focus-visible:ring-offset-2 ring-gray-50/60 text-sm font-medium px-4 py-2 mt-auto origin-left"
       >
-        Live Preview
+        {project.buttonText}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -82,9 +86,9 @@ export const SingleProject = ({ project }: { project: Project }) => {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform"
         >
           <path d="M5 12l14 0"></path>

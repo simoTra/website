@@ -9,4 +9,5 @@ export type Project = {
   slug?: string;
   stack?: string[];
   content?: React.ReactNode | string;
+  buttonText: string;
 };

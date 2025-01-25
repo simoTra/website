@@ -56,6 +56,7 @@ export const Blogs = ({ blogs }: { blogs: Blog[] }) => {
             </AnimatePresence>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 relative z-20">
               <Image
+                unoptimized={true}
                 src={blog.image}
                 alt="thumbnail"
                 height="200"
@@ -64,7 +65,7 @@ export const Blogs = ({ blogs }: { blogs: Blog[] }) => {
                 className="rounded-md object-cover h-40 w-60"
               />
               <div className="flex flex-col col-span-3">
-                <Heading className="text-lg md:text-lg lg:text-lg">
+                <Heading className="text-lg md:text-lg lg:text-lg text-neutral-300">
                   {blog.title}
                 </Heading>
                 <Paragraph className="text-sm md:text-sm lg:text-sm mt-2">

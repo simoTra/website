@@ -11,7 +11,7 @@ export function Prose({
     <div
       className={clsx(
         className,
-        "text-neutral-400 prose prose-sm max-w-none"
+        "text-neutral-300 prose prose-sm max-w-none"
       )}
     >
       {children}

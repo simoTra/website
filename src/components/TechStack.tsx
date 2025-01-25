@@ -58,7 +58,8 @@ export const TechStack = () => {
       </Heading>
       <div className="flex flex-wrap">
         {stack.map((item) => (
-          <Image
+                  <Image
+          unoptimized={true}
             src={item.src}
             key={item.src}
             width={`200`}
