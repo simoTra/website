@@ -55,16 +55,14 @@ export const projects = [
           poor Ender3 couldn&apos;t handle too many hours of printing).
         </p>
         <div className="text-neutral-300 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Image
-          
+          <Image
             className="text-neutral-300 rounded-lg shadow-lg"
             src="/projects/3DTele/7telecaster.jpg"
             alt="Assembly Process"
             width={300}
             height={600}
           />
-                  <Image
-          
+          <Image
             className="text-neutral-300 rounded-lg shadow-lg"
             src="/projects/3DTele/10telecaster.jpg"
             alt="Assembly Process"
@@ -117,32 +115,28 @@ export const projects = [
           assembling my custom electric guitar.
         </p>
         <div className="text-neutral-300 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Image
-          
+          <Image
             className="text-neutral-300 rounded-lg shadow-lg"
             src="/projects/3DTele/6telecaster.jpg"
             alt="Assembly Process"
             width={300}
             height={600}
           />
-                  <Image
-          
+          <Image
             className="text-neutral-300 rounded-lg shadow-lg"
             src="/projects/3DTele/9telecaster.jpg"
             alt="Assembly Process"
             width={300}
             height={600}
           />
-                  <Image
-          
+          <Image
             className="text-neutral-300 rounded-lg shadow-lg"
             src="/projects/3DTele/8telecaster.jpg"
             alt="Assembly Process"
             width={300}
             height={600}
           />
-                  <Image
-          
+          <Image
             className="text-neutral-300 rounded-lg shadow-lg"
             src="/projects/3DTele/4telecaster.jpg"
             alt="Assembly Process"
@@ -157,8 +151,7 @@ export const projects = [
           the budget too much, I found a maple neck much better than the
           previous one.
         </p>
-                <Image
-          
+        <Image
           className="text-neutral-300 rounded-lg shadow-lg my-4"
           src="/projects/3DTele/3telecaster.jpg"
           alt="Improved Maple Neck"
@@ -171,8 +164,7 @@ export const projects = [
           electronics to setting up the bridge and tuning the strings, every
           step was executed with precision and care.
         </p>
-                <Image
-          
+        <Image
           className="text-neutral-300 rounded-lg shadow-lg my-4"
           src="/projects/3DTele/2telecaster.jpg"
           alt="Final Assembly"
@@ -202,8 +194,7 @@ export const projects = [
           And as I strummed the final chord, I knew that this was only the
           beginning of many more musical adventures to come.
         </p>
-                <Image
-          
+        <Image
           className="text-neutral-300 rounded-lg shadow-lg my-4"
           src="/projects/3DTele/1telecaster.jpg"
           alt="Live Test"
@@ -306,8 +297,7 @@ export const projects = [
           The matrix configuration is peculiar yet functional, designed to
           facilitate assembly operations.
         </p>
-                <Image
-          
+        <Image
           className="text-neutral-300 rounded-lg shadow-lg my-4"
           src="https://github.com/simoTra/st_keeb/raw/main/images/layout.png"
           alt="Keyboard Layout"
@@ -326,8 +316,7 @@ export const projects = [
           </a>
           .
         </p>
-                <Image
-          
+        <Image
           className="text-neutral-300 rounded-lg shadow-lg my-4"
           src="https://github.com/simoTra/st_keeb/raw/main/images/matrixScheme.png"
           alt="Matrix Scheme"
@@ -359,8 +348,7 @@ export const projects = [
           <tbody>
             <tr>
               <td>
-                        <Image
-          
+                <Image
                   src="https://github.com/simoTra/st_keeb/raw/main/images/orbitalSanding.jpg"
                   alt="orbital sanding"
                   className="text-neutral-300 rounded-lg shadow-lg"
@@ -369,8 +357,7 @@ export const projects = [
                 />
               </td>
               <td>
-                        <Image
-          
+                <Image
                   src="https://github.com/simoTra/st_keeb/raw/main/images/printedPart.jpg"
                   alt="printed part"
                   className="text-neutral-300 rounded-lg shadow-lg"
@@ -379,8 +366,7 @@ export const projects = [
                 />
               </td>
               <td>
-                        <Image
-          
+                <Image
                   src="https://github.com/simoTra/st_keeb/raw/main/images/finalWithoutBase.jpg"
                   alt="final without base"
                   className="text-neutral-300 rounded-lg shadow-lg"
@@ -402,8 +388,7 @@ export const projects = [
           <tbody>
             <tr>
               <td>
-                        <Image
-          
+                <Image
                   src="https://github.com/simoTra/st_keeb/raw/main/images/back.jpeg"
                   alt="back"
                   className="text-neutral-300 rounded-lg shadow-lg"
@@ -412,8 +397,7 @@ export const projects = [
                 />
               </td>
               <td>
-                        <Image
-          
+                <Image
                   src="https://github.com/simoTra/st_keeb/raw/main/images/microcontroller.jpeg"
                   alt="microcontroller"
                   className="text-neutral-300 rounded-lg shadow-lg"
@@ -422,8 +406,7 @@ export const projects = [
                 />
               </td>
               <td>
-                        <Image
-          
+                <Image
                   src="https://github.com/simoTra/st_keeb/raw/main/images/matrix.jpeg"
                   alt="matrix"
                   className="text-neutral-300 rounded-lg shadow-lg"
@@ -443,8 +426,7 @@ export const projects = [
           <tbody>
             <tr>
               <td>
-                        <Image
-          
+                <Image
                   src="https://github.com/simoTra/st_keeb/raw/main/images/final.jpeg"
                   alt="final"
                   className="text-neutral-300 rounded-lg shadow-lg"
@@ -493,35 +475,35 @@ export const projects = [
     buttonText: "More on GitHub",
     content: (
       <div className="text-neutral-300 prose mx-auto p-6">
-        <h1>Understanding the Architecture of Projectalogs</h1>
-        <p>
-          <strong>Projectalogs</strong> is a 3D printing job tracking tool
+        <h1 className="text-neutral-300">Understanding the Architecture of Projectalogs</h1>
+        <p className="text-neutral-300">
+          <strong className="text-neutral-300">Projectalogs</strong> is a 3D printing job tracking tool
           designed to group prints by project, associate them with clients, and
           provide analytics on costs and performance. Below is an overview of
           its architecture.
         </p>
 
-        <h2>Frontend</h2>
-        <p>
-          The frontend is built with <strong>React</strong>, leveraging the{" "}
-          <strong>Refine</strong> framework. This interface allows users to
+        <h2 className="text-neutral-300">Frontend</h2>
+        <p className="text-neutral-300"> className="text-neutral-300"
+          The frontend is built with <strong className="text-neutral-300">React</strong>, leveraging the{" "}
+          <strong className="text-neutral-300">Refine</strong> framework. This interface allows users to
           perform CRUD (Create, Read, Update, Delete) operations for managing
           clients, jobs, and projects. Additionally, it provides a dashboard for
           viewing real-time statistics and analytics of the connected 3D
           printer.
         </p>
 
-        <h2>Backend</h2>
+        <h2 className="text-neutral-300">Backend</h2>
         <p>
-          The backend is implemented in <strong>TypeScript</strong> using the{" "}
-          <strong>NestJS</strong> framework. It serves as the central hub,
+          The backend is implemented in <strong className="text-neutral-300">TypeScript</strong> using the{" "}
+          <strong className="text-neutral-300">NestJS</strong> framework. It serves as the central hub,
           managing data and business logic. The backend also integrates with{" "}
-          <strong>Moonraker Klipper</strong> APIs to import existing print jobs
+          <strong className="text-neutral-300">Moonraker Klipper</strong> APIs to import existing print jobs
           and to enable the creation of new jobs directly within Klipper
           interfaces like Fluidd and Mainsail.
         </p>
 
-        <h2>Current Status</h2>
+        <h2 className="text-neutral-300">Current Status</h2>
         <p>
           As of now, Projectalogs is in its early stages. The base architecture
           and CRUD functionalities are implemented, providing a solid foundation
@@ -529,8 +511,7 @@ export const projects = [
           analytics and deeper integration with Klipper interfaces, are planned.
         </p>
 
-                <Image
-          
+        <Image
           src="/projects/projectalogs/projectalogsArchitecture.png"
           alt="Architecture Diagram"
           className="text-neutral-300 rounded-lg shadow-lg"
